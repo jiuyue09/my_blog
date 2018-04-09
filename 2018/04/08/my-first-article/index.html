@@ -11,15 +11,16 @@
     
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"John Doe","sameAs":[]},"articleBody":"搭建博客填坑我搭建博客的过程完全是依照这篇文章依照这个基本都能搭建完成下面是我自己在搭建过程中遇到的所有问题和解决方案\n安装hexo1$ npm install -g hexo-cli\n运行不成功时 用管理员权限 加上sudo\n1$ sudo npm install -g hexo-cli\n使用以下两个命令 \n12345$ hexo generate             // 生成静态文件（结果文件）$ hexo server               // 启动本地服务，可以通过http://localhost:4000/ 访问一直出现错误ERROR Local hexo not found in ERROR Try running: &apos;npm install hexo --save&apos;\n执行 npm install 还是不行总结网上所有的解决方案\n\n再次执行  npm install\n先执行删除，在执行安装12rm -rf node_modules/ &amp;&amp;npm install\n\n\n但是我试了以上解决办法都不好使，后来总结原因可能是node版本过于陈旧，更新node最新版本 再执行以上解决方案，可行。\n设置主题1$ git clone https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git themes/tranquilpeak\n然后修改Hexo目录下的_config.yml配置文件中的theme属性，将其设置为transquilpeak。注意以上中transquilpeak拼写是错误的，原博主多写了个s，正确的应该是tranquilpeak\n还有一个问题就是这个主题clone下来之后需要安装依赖cd themes/tranquilpeak 执行npm install不然有可能会报缺少依赖库找不到 这个地方花费了较长的时间\n","dateCreated":"2018-04-08T19:22:00+08:00","dateModified":"2018-04-08T19:58:38+08:00","datePublished":"2018-04-08T19:22:00+08:00","description":"","headline":"my first article","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://yoursite.com/2018/04/08/my-first-article/"},"publisher":{"@type":"Organization","name":"John Doe","sameAs":[]},"url":"http://yoursite.com/2018/04/08/my-first-article/"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"John Doe","sameAs":[],"image":"https://www.gravatar.com/avatar/6e03ef65e85f5c05a892922d460fd53b"},"articleBody":"搭建博客填坑我搭建博客的过程完全是依照这篇文章依照这个基本都能搭建完成下面是我自己在搭建过程中遇到的所有问题和解决方案\n安装hexo1$ npm install -g hexo-cli\n运行不成功时 用管理员权限 加上sudo\n1$ sudo npm install -g hexo-cli\n使用以下两个命令 \n12345$ hexo generate             // 生成静态文件（结果文件）$ hexo server               // 启动本地服务，可以通过http://localhost:4000/ 访问一直出现错误ERROR Local hexo not found in ERROR Try running: &apos;npm install hexo --save&apos;\n执行 npm install 还是不行总结网上所有的解决方案\n\n再次执行  npm install\n先执行删除，在执行安装12rm -rf node_modules/ &amp;&amp;npm install\n\n\n但是我试了以上解决办法都不好使，后来总结原因可能是node版本过于陈旧，更新node最新版本 再执行以上解决方案，可行。\n设置主题1$ git clone https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git themes/tranquilpeak\n然后修改Hexo目录下的_config.yml配置文件中的theme属性，将其设置为transquilpeak。注意以上中transquilpeak拼写是错误的，原博主多写了个s，正确的应该是tranquilpeak\n还有一个问题就是这个主题clone下来之后需要重新编译，否则是显示不出来的，请看这里或者直接下载Release包，手动移动到themes/tranquilpeak目录下面\n","dateCreated":"2018-04-08T19:22:00+08:00","dateModified":"2018-04-09T11:16:40+08:00","datePublished":"2018-04-08T19:22:00+08:00","description":"","headline":"my first article","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://yoursite.com/2018/04/08/my-first-article/"},"publisher":{"@type":"Organization","name":"John Doe","sameAs":[],"image":"https://www.gravatar.com/avatar/6e03ef65e85f5c05a892922d460fd53b","logo":{"@type":"ImageObject","url":"https://www.gravatar.com/avatar/6e03ef65e85f5c05a892922d460fd53b"}},"url":"http://yoursite.com/2018/04/08/my-first-article/","keywords":"主题"}</script>
     <meta name="description" content="搭建博客填坑我搭建博客的过程完全是依照这篇文章依照这个基本都能搭建完成下面是我自己在搭建过程中遇到的所有问题和解决方案 安装hexo1$ npm install -g hexo-cli 运行不成功时 用管理员权限 加上sudo 1$ sudo npm install -g hexo-cli 使用以下两个命令  12345$ hexo generate             // 生成静态文件（结">
+<meta name="keywords" content="主题">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="my first article">
 <meta property="og:url" content="http://yoursite.com/2018/04/08/my-first-article/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="搭建博客填坑我搭建博客的过程完全是依照这篇文章依照这个基本都能搭建完成下面是我自己在搭建过程中遇到的所有问题和解决方案 安装hexo1$ npm install -g hexo-cli 运行不成功时 用管理员权限 加上sudo 1$ sudo npm install -g hexo-cli 使用以下两个命令  12345$ hexo generate             // 生成静态文件（结">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-08T11:58:38.000Z">
+<meta property="og:updated_time" content="2018-04-09T03:16:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="my first article">
 <meta name="twitter:description" content="搭建博客填坑我搭建博客的过程完全是依照这篇文章依照这个基本都能搭建完成下面是我自己在搭建过程中遇到的所有问题和解决方案 安装hexo1$ npm install -g hexo-cli 运行不成功时 用管理员权限 加上sudo 1$ sudo npm install -g hexo-cli 使用以下两个命令  12345$ hexo generate             // 生成静态文件（结">
@@ -75,11 +76,11 @@
                         <a  class="sidebar-button-link "
                              href="/ "
                             
-                            title="global.home"
+                            title="Home"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-home" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">global.home</span>
+                        <span class="sidebar-button-desc">Home</span>
                     </a>
             </li>
             
@@ -88,11 +89,11 @@
                         <a  class="sidebar-button-link "
                              href="/all-categories"
                             
-                            title="global.categories"
+                            title="Categories"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-bookmark" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">global.categories</span>
+                        <span class="sidebar-button-desc">Categories</span>
                     </a>
             </li>
             
@@ -101,11 +102,11 @@
                         <a  class="sidebar-button-link "
                              href="/all-tags"
                             
-                            title="global.tags"
+                            title="Tags"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-tags" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">global.tags</span>
+                        <span class="sidebar-button-desc">Tags</span>
                     </a>
             </li>
             
@@ -114,11 +115,11 @@
                         <a  class="sidebar-button-link "
                              href="/all-archives"
                             
-                            title="global.archives"
+                            title="Archives"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-archive" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">global.archives</span>
+                        <span class="sidebar-button-desc">Archives</span>
                     </a>
             </li>
             
@@ -127,11 +128,11 @@
                         <a  class="sidebar-button-link open-algolia-search"
                              href="#search"
                             
-                            title="global.search"
+                            title="Search"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-search" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">global.search</span>
+                        <span class="sidebar-button-desc">Search</span>
                     </a>
             </li>
             
@@ -140,11 +141,11 @@
                         <a  class="sidebar-button-link "
                              href="#about"
                             
-                            title="global.about"
+                            title="About"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-question" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">global.about</span>
+                        <span class="sidebar-button-desc">About</span>
                     </a>
             </li>
             
@@ -197,6 +198,12 @@
     	
     </time>
     
+        <span>post.categorized_in </span>
+        
+    <a class="category-link" href="/categories/Hexo/">Hexo</a>
+
+
+    
 </div>
 
     
@@ -220,13 +227,20 @@
 <p>但是我试了以上解决办法都不好使，后来总结原因可能是node版本过于陈旧，更新node最新版本 再执行以上解决方案，可行。</p>
 <h3 id="设置主题"><a href="#设置主题" class="headerlink" title="设置主题"></a>设置主题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git themes/tranquilpeak</span><br></pre></td></tr></table></figure>
 <p>然后修改Hexo目录下的_config.yml配置文件中的theme属性，将其设置为transquilpeak。<br>注意以上中transquilpeak拼写是错误的，原博主多写了个s，正确的应该是tranquilpeak</p>
-<p>还有一个问题就是这个主题clone下来之后<br>需要安装依赖<code>cd themes/tranquilpeak</code> 执行<code>npm install</code><br>不然有可能会报缺少依赖库找不到 这个地方花费了较长的时间</p>
+<p>还有一个问题就是这个主题clone下来之后<br>需要重新编译，否则是显示不出来的，<a href="http://blog.huatai.me/2016/02/13/hexo-theme-tranquilpeak/" target="_blank" rel="noopener">请看这里</a><br>或者直接下载Release包，手动移动到themes/tranquilpeak目录下面</p>
 
             
 
         </div>
     </div>
     <div id="post-footer" class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">post.tagged_in</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/主题/">主题</a>
+
+            </div>
         
         
             <div class="post-actions-wrap">

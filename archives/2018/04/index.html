@@ -71,11 +71,11 @@
                         <a  class="sidebar-button-link "
                              href="/ "
                             
-                            title="global.home"
+                            title="Home"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-home" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">global.home</span>
+                        <span class="sidebar-button-desc">Home</span>
                     </a>
             </li>
             
@@ -84,11 +84,11 @@
                         <a  class="sidebar-button-link "
                              href="/all-categories"
                             
-                            title="global.categories"
+                            title="Categories"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-bookmark" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">global.categories</span>
+                        <span class="sidebar-button-desc">Categories</span>
                     </a>
             </li>
             
@@ -97,11 +97,11 @@
                         <a  class="sidebar-button-link "
                              href="/all-tags"
                             
-                            title="global.tags"
+                            title="Tags"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-tags" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">global.tags</span>
+                        <span class="sidebar-button-desc">Tags</span>
                     </a>
             </li>
             
@@ -110,11 +110,11 @@
                         <a  class="sidebar-button-link "
                              href="/all-archives"
                             
-                            title="global.archives"
+                            title="Archives"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-archive" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">global.archives</span>
+                        <span class="sidebar-button-desc">Archives</span>
                     </a>
             </li>
             
@@ -123,11 +123,11 @@
                         <a  class="sidebar-button-link open-algolia-search"
                              href="#search"
                             
-                            title="global.search"
+                            title="Search"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-search" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">global.search</span>
+                        <span class="sidebar-button-desc">Search</span>
                     </a>
             </li>
             
@@ -136,11 +136,11 @@
                         <a  class="sidebar-button-link "
                              href="#about"
                             
-                            title="global.about"
+                            title="About"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-question" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">global.about</span>
+                        <span class="sidebar-button-desc">About</span>
                     </a>
             </li>
             
@@ -197,6 +197,12 @@
     	
     </time>
     
+        <span>post.categorized_in </span>
+        
+    <a class="category-link" href="/categories/Hexo/">Hexo</a>
+
+
+    
 </div>
 
             </div>
@@ -217,7 +223,7 @@
 <p>但是我试了以上解决办法都不好使，后来总结原因可能是node版本过于陈旧，更新node最新版本 再执行以上解决方案，可行。</p>
 <h3 id="设置主题"><a href="#设置主题" class="headerlink" title="设置主题"></a>设置主题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git themes/tranquilpeak</span><br></pre></td></tr></table></figure>
 <p>然后修改Hexo目录下的_config.yml配置文件中的theme属性，将其设置为transquilpeak。<br>注意以上中transquilpeak拼写是错误的，原博主多写了个s，正确的应该是tranquilpeak</p>
-<p>还有一个问题就是这个主题clone下来之后<br>需要安装依赖<code>cd themes/tranquilpeak</code> 执行<code>npm install</code><br>不然有可能会报缺少依赖库找不到 这个地方花费了较长的时间</p>
+<p>还有一个问题就是这个主题clone下来之后<br>需要重新编译，否则是显示不出来的，<a href="http://blog.huatai.me/2016/02/13/hexo-theme-tranquilpeak/" target="_blank" rel="noopener">请看这里</a><br>或者直接下载Release包，手动移动到themes/tranquilpeak目录下面</p>
 
                     
                         
